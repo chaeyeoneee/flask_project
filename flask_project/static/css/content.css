@@ -1,0 +1,81 @@
+.myinfo{
+    width:100%;
+    height:100%;
+    padding-bottom: 150px;
+}
+.myinfo .myinfo_wrap{
+    width:1000px;
+    margin: 0 auto;
+}
+.myinfo_wrap .follow{
+
+}
+.myinfo_wrap .follow h3{
+    font-size: 25px;
+}
+.myinfo_wrap .follow .follow_table{
+    width:100%;
+    border: 1px solid #eeeeee;
+    text-align:center;
+    padding: 15px 5px 0px 5px;
+    margin-top:20px;
+}
+.myinfo_wrap .follow .follow_table td{
+    padding-bottom:20px;
+}
+.myinfo_wrap .follow .follow_table .name{
+    color:#721cf4;
+    font-weight:bold;
+}
+.myinfo_wrap .follow .follow_table button{
+    background-color:#ffffff;
+    border:none;
+}
+
+.myinfo_wrap .item{
+    margin-top:40px;
+}
+.myinfo_wrap .item ul:after{
+    display: block;
+    clear: both;
+    content: "";
+    height: 0;
+}
+
+.myinfo_wrap .item ul li{
+    position: relative;
+    float:left;
+    width:49%;
+    box-sizing: border-box;
+    margin-right:2%;
+    border: 1px solid #eeeeee;
+    padding:15px;
+}
+.myinfo_wrap .item ul li:last-child{
+    margin-right:0;
+}
+.myinfo_wrap .item ul li img{
+    width:100%;
+}
+.myinfo_wrap .item .item_head{
+    margin-top:20px;
+}
+.myinfo_wrap .item .item_condition{
+    margin-top:15px;
+    color:red;
+    font-size:20px;
+}
+.myinfo_wrap .item .item_price{
+    margin-top:4px;
+}
+.myinfo_wrap .item .item_btn{
+    position:absolute;
+    right:15px;
+    bottom:15px;
+    background-color:#731cf5;
+    border:none;
+    color:#ffffff;
+    width: 90px;
+    height: 25px;
+
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="kr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="header_content">
+            <div class="header_top">
+                <a href="/">
+                    로그인 / 회원가입
+                </a>
+            </div>
+            <div class="header_hr"></div>
+            <div class="header_wrap">
+                <div class="logo">
+                    <a href="/">
+                        <img src="{{ url_for('static', filename='images/logo.png') }}">
+                    </a>
+                </div>
+                <div class="search">
+                    <input type="text" placeholder="검색어를 입력하세요.">
+                    <button class="search_btn"></button>
+                </div>
+                <ul class="icon">
+                    <li class="info">
+                        <a href="/info">
+                            <img src="{{ url_for('static', filename='images/info.png') }}">
+                            <p class="text">내정보</p>
+                        </a>
+                    </li>
+                    <li class="sale">
+                        <a href="/">
+                            <img src="{{ url_for('static', filename='images/sale.png') }}">
+                            <p class="text">판매하기</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

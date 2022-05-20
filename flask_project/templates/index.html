@@ -4,12 +4,87 @@
         <meta charset="UTF-8">
         <title>Document</title>
         <link rel="stylesheet" href="{{ url_for('static', filename='css/common.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/content.css') }}">
     </head>
     <body>
         <header class="header">
             {% include 'header.html' %}
         </header>
-
+        <div class="main">
+            <div class="mainwrap">
+                <h3>지금 판매중인 상품들</h3>
+                <ul>
+                    <li>
+                        <a href="/">
+                            <img src="{{ url_for('static', filename='images/item_1.png') }}">
+                            <div class="main_title">
+                                폴리테루 텐코셔츠 다크네이비333333
+                            </div>
+                            <div class="main_price">
+                                30,000원
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="{{ url_for('static', filename='images/item_1.png') }}">
+                            <div class="main_title">
+                                폴리테루 텐코셔츠 다크네이비333333
+                            </div>
+                            <div class="main_price">
+                                30,000원
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="{{ url_for('static', filename='images/item_1.png') }}">
+                            <div class="main_title">
+                                폴리테루 텐코셔츠 다크네이비333333
+                            </div>
+                            <div class="main_price">
+                                30,000원
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <a href="/">
+                            <img src="{{ url_for('static', filename='images/item_1.png') }}">
+                            <div class="main_title">
+                                폴리테루 텐코셔츠 다크네이비333333
+                            </div>
+                            <div class="main_price">
+                                30,000원
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="{{ url_for('static', filename='images/item_1.png') }}">
+                            <div class="main_title">
+                                폴리테루 텐코셔츠 다크네이비333333
+                            </div>
+                            <div class="main_price">
+                                30,000원
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="{{ url_for('static', filename='images/item_1.png') }}">
+                            <div class="main_title">
+                                폴리테루 텐코셔츠 다크네이비333333
+                            </div>
+                            <div class="main_price">
+                                30,000원
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <footer class="footer">
             {% include 'footer.html' %}
         </footer>

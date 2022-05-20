@@ -1,3 +1,36 @@
+.main{
+    width:100%;
+    height:100%;
+    padding-bottom:150px;
+}
+.main .mainwrap{
+    width: 1000px;
+    margin: 0 auto;
+}
+.main .mainwrap ul:after{
+    display:block;
+    clear:both;
+    height:0;
+    content: '';
+}
+.main .mainwrap li{
+    float:left;
+    width:32%;
+    margin-right:2%;
+    box-sizing: border-box;
+    overflow:hidden;
+    text-overflow: ellipsis;
+}
+.main .mainwrap li:last-child{
+    margin-right:0;
+}
+.main .mainwrap li img{
+    width:100%;
+}
+.main .mainwrap li .main_title{
+}
+
+/*내정보 css*/
 .myinfo{
     width:100%;
     height:100%;
@@ -77,5 +110,109 @@
     color:#ffffff;
     width: 90px;
     height: 25px;
+}
 
+/*회원가입 css*/
+.sign{
+    width:100%;
+    height:100%;
+    padding-bottom:150px;
+}
+.sign .sign_wrap h3{
+    width:600px;
+    margin: 0 auto;
+    font-size:21px;
+    font-weight:bold;
+}
+.sign .sign_wrap .sign_content{
+    width:500px;
+    margin:0 auto;
+    margin-top:20px;
+    background-color:#fafafa;
+    padding:50px;
+}
+.sign .sign_wrap .id{}
+.sign .sign_wrap .pw{ margin-top:20px; }
+.sign .sign_wrap .pw_check{ margin-top:20px; }
+
+.sign .sign_wrap .id .id_title,
+.sign .sign_wrap .pw .pw_title,
+.sign .sign_wrap .pw_check .pw_check_title
+{
+    font-size:17px;
+    font-weight:bold;
+}
+
+.sign .sign_wrap .id .id_input,
+.sign .sign_wrap .pw .pw_input,
+.sign .sign_wrap .pw_check .pw_check_input
+{
+    width:100%;
+    height:30px;
+    margin-top:10px;
+    border:1px solid #721cf4;
+}
+.sign .sign_wrap .btn{
+    margin-top:30px;
+}
+.sign .sign_wrap .btn .signbtn{
+    width:100%;
+    height:30px;
+    background-color:#721cf4;
+    color:#ffffff;
+    border:none;
+}
+
+/*로그인 css*/
+.login{
+    width:100%;
+    height:100%;
+    margin-top:50px;
+    padding-bottom:150px;
+}
+.login .login_wrap{
+    width:500px;
+    margin:0 auto;
+}
+.login .login_wrap .id{
+    border:1px solid #eeeeee;
+}
+.login .login_wrap .login_id .id_title{
+    display:block;
+    font-size:18px;
+    font-weight:bold;
+}
+.login .login_wrap .login_id .login_id_input{
+    width:100%;
+    height:30px;
+    margin-top:10px;
+    border:1px solid #721cf4;
+}
+.login .login_wrap .login_pw{
+    margin-top:20px;
+}
+.login .login_wrap .login_pw .pw_title{
+    display:block;
+    font-size:18px;
+    font-weight:bold;
+}
+.login .login_wrap .login_pw .login_pw_input{
+    width:100%;
+    height:30px;
+    margin-top:10px;
+    border:1px solid #721cf4;
+}
+.login .login_wrap .login_btn{
+    margin-top:20px;
+}
+.login .login_wrap .login_btn button{
+    width:100%;
+    height:30px;
+    background-color:#721cf4;
+    color:#ffffff;
+    border:none;
+}
+.login .login_wrap .login_signup{
+    margin-top:10px;
+    text-align:center;
 }

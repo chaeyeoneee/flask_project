@@ -3,15 +3,21 @@
 /* font-family:'Noto Serif',serif; */
 li { list-style:none; }
 html,body { width:100%; position:relative; -webkit-overflow-scrolling:touch; overflow-x: hidden;}
+input { autocomplete :"off"; }
 a { text-decoration:none; }
 .header{
     width:100%;
 }
 .header_content{
     width: 1000px;
-    height:180px;
+    height:150px;
     margin: 0 auto;
     position: relative;
+}
+.header_content .user_check{
+    position:absolute;
+    left:0;
+    top:15px;
 }
 .header_content .header_top{
     position: absolute;
@@ -60,6 +66,7 @@ a { text-decoration:none; }
     background-position-x: center;
     background-position-y: center;
     background-size:20px;
+    cursor:pointer;
 }
 .header_content .header_wrap .search input{
     width: 400px;
@@ -87,7 +94,7 @@ a { text-decoration:none; }
 .header_content .header_wrap .icon .info img{
     width:40px;
 }
-.header_content .header_wrap .icon .sale img{
+.header_content .header_wrap .icon .saleicon img{
     width:44px;
 }
 .footer{
@@ -104,7 +111,7 @@ a { text-decoration:none; }
 }
 .footer .footer_content h3{
     text-align:center;
-    size:15px;
+    font-size:15px;
     color:#ffffff;
 }
 

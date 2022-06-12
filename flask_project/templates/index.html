@@ -1,3 +1,10 @@
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <script>
+            alert('{{messages[-1]}}')
+        </script>
+    {% endif %}
+{% endwith %}
 <!doctype html>
 <html lang="kr">
     <head>
@@ -14,74 +21,24 @@
             <div class="mainwrap">
                 <h3>지금 판매중인 상품들</h3>
                 <ul>
-                    <li>
-                        <a href="/">
-                            <img src="{{ url_for('static', filename='images/item_1.png') }}">
-                            <div class="main_title">
-                                폴리테루 텐코셔츠 다크네이비333333
-                            </div>
-                            <div class="main_price">
-                                30,000원
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/">
-                            <img src="{{ url_for('static', filename='images/item_1.png') }}">
-                            <div class="main_title">
-                                폴리테루 텐코셔츠 다크네이비333333
-                            </div>
-                            <div class="main_price">
-                                30,000원
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/">
-                            <img src="{{ url_for('static', filename='images/item_1.png') }}">
-                            <div class="main_title">
-                                폴리테루 텐코셔츠 다크네이비333333
-                            </div>
-                            <div class="main_price">
-                                30,000원
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="/">
-                            <img src="{{ url_for('static', filename='images/item_1.png') }}">
-                            <div class="main_title">
-                                폴리테루 텐코셔츠 다크네이비333333
-                            </div>
-                            <div class="main_price">
-                                30,000원
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/">
-                            <img src="{{ url_for('static', filename='images/item_1.png') }}">
-                            <div class="main_title">
-                                폴리테루 텐코셔츠 다크네이비333333
-                            </div>
-                            <div class="main_price">
-                                30,000원
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/">
-                            <img src="{{ url_for('static', filename='images/item_1.png') }}">
-                            <div class="main_title">
-                                폴리테루 텐코셔츠 다크네이비333333
-                            </div>
-                            <div class="main_price">
-                                30,000원
-                            </div>
-                        </a>
-                    </li>
+                    {%for product in Product %}
+                        <li>
+                            <form method="GET" action="/detail/{{product.pid}}">
+                                {% if product.check == '1' %}
+                                    <div class="item_condition_gg">
+                                        <span>판매완료</span>
+                                    </div>
+                                {% endif %}
+                                <input type="image" src="{{ url_for('static', filename='product_images/'+product.photo) }}" >
+                                <div class="main_title">
+                                    {{product.name}}
+                                </div>
+                                <div class="main_price">
+                                    {{product.price}}원
+                                </div>
+                            </form>
+                        </li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
